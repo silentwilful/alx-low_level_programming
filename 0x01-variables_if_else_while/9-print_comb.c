@@ -8,12 +8,16 @@
 
 int main(void)
 {
-	int index = 0;
+	int index;
 
-	while (index < 10)
+	for (index = 48; index < 58; index++)
 	{
-		printf("%d", index);
-		index++;
+		putchar(index);
+		if (index != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
