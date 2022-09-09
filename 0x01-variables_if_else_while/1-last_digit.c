@@ -5,7 +5,7 @@
 /**
  *main - prints the last digit
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  **/
 
 int main(void)
@@ -14,7 +14,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
  	lastDigit = (n % 10);
 
 	printf("Last digit of %d is %d ", n, lastDigit);
@@ -28,7 +27,8 @@ int main(void)
 	}
 	else
 	{
-		printf("and is less than 6 and not 0/n");
+		printf("and is less than 6 and not 0/n");	
 	}
+	
 	return (0);
 }
