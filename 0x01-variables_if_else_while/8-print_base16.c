@@ -1,22 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
- *main - prints all the numbers of base 16 in lowercase
+ *main - numbers of base 16 in lowercase
  *
  *Return: Always 0
  */
+
 int main(void)
 {
-	int c;
+	int index;
 
-	for (c = 48; c <= 102; c++)
+	for (index = 48; index < 58; index++)
 	{
-		if ((c >= 48 && c <= 57) || (c >= 97 && c <= 102))
-		{
-			putchar(c);
-		}
+		putchar(index);
+	}
+	for (index = 97; index < 103; index++)
+	{
+		putchar(index);
 	}
 	putchar('\n');
 	return (0);
 }
-
