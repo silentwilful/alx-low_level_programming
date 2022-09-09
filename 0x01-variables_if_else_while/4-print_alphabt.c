@@ -11,15 +11,11 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (c != 'e' && c != 'q'
+		if (c != 'q' && c != 'e')
 		{
-			putchar(c);
+			putchar (c);
 		}
-
 	}
-
 	putchar('\n');
-
 	return (0);
-
 }
