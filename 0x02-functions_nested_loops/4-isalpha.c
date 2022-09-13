@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  *_isalpha check alphabet character
  *@c: character to check
  *
