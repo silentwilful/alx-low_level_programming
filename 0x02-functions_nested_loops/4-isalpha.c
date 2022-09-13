@@ -2,7 +2,7 @@
 
 /**
  *
- *Description: int _isalpha check alphabet character
+ *int _isalpha check alphabet character
  *character to check
  *
  *Return: 0
