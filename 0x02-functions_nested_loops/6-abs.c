@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *absolute fuction - outputs absolute value
- *@n: int check
+ *_abs - integer absolute
+ *@n: integer check
  *
  *Return: n
  */
