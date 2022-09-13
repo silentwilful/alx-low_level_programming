@@ -1,6 +1,7 @@
 #include "main.h"
-/*
- *main - Write a program that prints _putchar
+/**
+ *main - entry that returns 0
+ *
  *
  *Return: Always 0
  */
