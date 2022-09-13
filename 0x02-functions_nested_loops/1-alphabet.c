@@ -1,17 +1,17 @@
-#nclude "main.h"
+#include "main.h"
 
 /**
- *main - check the code
+ *main - print the alphabets
  *
  *Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	char ch = 'a';
+	char c;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(ch);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
