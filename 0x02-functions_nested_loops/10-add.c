@@ -4,7 +4,7 @@
  *@a: first integer
  *@b: second integer
  *
- * Return: addition of a and b
+ * Return: Always 0
  */
 
 int add(int a, int b)
