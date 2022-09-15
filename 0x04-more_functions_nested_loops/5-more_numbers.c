@@ -8,17 +8,17 @@ include "main.h"
  */
 void more_numbers(void)
 {
-	int y, ex;
+	int i, ex;
 
 	for (ex = 0; ex < 10; ex++)
 	{
-		for (y = 0; y <= 14; y++)
+		for (i = 0; i <= 14; i++)
 		{
-			if (y >= 10)
+			if (i >= 10)
 			{
-				_putchar((y / 10) + '0');
+				_putchar((i / 10) + '0');
 			}
-			_putchar((y % 10) + '0');
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
 	}
