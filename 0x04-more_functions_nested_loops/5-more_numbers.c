@@ -8,18 +8,20 @@ include "main.h"
  */
 void more_numbers(void)
 {
-	int i, ex;
+	int j, i = 0;
 
-	for (ex = 0; ex < 10; ex++)
+	for (j = 0; j < 10; j++)
 	{
-		for (i = 0; i <= 14; i++)
+		while (i <= 14)
 		{
-			if (i >= 10)
+			if (i / 10 != 0)
 			{
-				_putchar((i / 10) + '0');
+				_putchar (i / 10 + '0');
 			}
-			_putchar((i % 10) + '0');
+			_putchar (i % 10 + '0');
+			i++;
 		}
-		_putchar('\n');
+		i = 0;
+		_putchar (10);
 	}
 }
