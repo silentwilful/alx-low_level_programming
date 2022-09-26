@@ -4,7 +4,7 @@
  *@c: character to derive
  *@s: the string
  *
- *Return:
+ *Return: on success
  */
 char *_strchr(char *s, char c)
 {
