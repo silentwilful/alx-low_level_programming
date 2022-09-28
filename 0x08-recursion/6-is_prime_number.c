@@ -2,29 +2,29 @@
 
 /**
  * prime_a - main - check the code
- * @a: number
- * @b: number of power
+ * @j: power number
+ * @i: number
  * Return: Always 0.
  */
 
-int prime_a(int a, int b)
+int prime_i(int i, int j)
 {
 
-	if (a <= 1 || (a != b && a % b == 0))
+	if (i <= 1 || (i != j && i % j == 0))
 	{
 
 		return (0);
 
 	}
 
-		else if (a == b)
+		else if (i == j)
 	{
 
 		return (1);
 
 	}
 
-	return (prime_a(a, b + 1));
+	return (prime_i(i, j + 1));
 
 }
 
@@ -39,6 +39,6 @@ int prime_a(int a, int b)
 int is_prime_number(int n)
 {
 
-	return (prime_a(n, 2));
+	return (prime_i(n, 2));
 
 }
