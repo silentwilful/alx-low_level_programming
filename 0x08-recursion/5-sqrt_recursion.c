@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_sqrt_recursion - returning of the natural square root of a number
  *@n: number
@@ -8,24 +9,31 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
-		return (n);
-	return (_sqrt(0, n));
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return (is_square_root(n, 1));
 }
 
 
 /**
  *_sqrt - returns square root number
- *@x: input number at sqrt
- *@y: sqrt number for find sqrt
+ *@a: input number at sqrt
+ *@b: sqrt number for find sqrt
  *
- *Return: -1 or sqrt of y
+ *Return: -1 or sqrt of b
  */
-int _sqrt(int x, int y)
+int _sqrt(int a, int b)
 {
-	if (x > y / 2)
+
+	if (b * b > a)
+	{
 		return (-1);
-	else if (x * x == y)
-		return (x);
-	return (_sqrt(x + 1, y));
+	}
+	if (b * b == a)
+	{
+		return (b);
+	}
+	return (is_square_root(a, b + 1));
 }
