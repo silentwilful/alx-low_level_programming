@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * prime_a - main - check the code
- * @j: power number
- * @i: number
+ * prime_i - check if the number is prime
+ * @j: factor check
+ * @i: prime number
  * Return: Always 0.
  */
 
@@ -30,8 +30,8 @@ int prime_i(int i, int j)
 
 
 /**
- * is_prime_number - main - check the code
- * @n: number
+ * is_prime_number - check if the number is prime
+ * @n: number to check
  *
  * Return: Always 0.
  */
