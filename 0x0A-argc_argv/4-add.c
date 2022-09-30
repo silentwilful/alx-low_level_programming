@@ -8,27 +8,23 @@
  *
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-	int i, y = 0;
-	char *c;
+	int i, ex;
 
-	for (i = 1; i < argc; i++)
+	ex = 0;
+
+	for (i = 0; i < argc; i++)
 	{
-		c = argv[i];
-		while (*c)
+		if (i > 0)
 		{
-			if (*c < 47 || *c > 57)
+			if (atoi(argv[i]) == 0)
 			{
-				printf("Error\n");
-				return (1);
+				return (printf("Error\n"), 1);
 			}
-			c++;
+			ex += atoi(argv[i]);
 		}
-		y = y + atoi(argv[i]);
 	}
-	printf("%d\n", y);
-
+	printf("%d\n", ex);
 	return (0);
-
+}
